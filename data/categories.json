@@ -1,0 +1,82 @@
+[
+  {
+    "name": "5-Sleeves",
+    "slug": "5-sleeves",
+    "path": "/Products/5-sleeves/"
+  },
+  {
+    "name": "Cushions",
+    "slug": "cushions",
+    "path": "/Products/cushions/"
+  },
+  {
+    "name": "Embroidery Jersey",
+    "slug": "embroidery-jersey",
+    "path": "/Products/embroidery-jersey/"
+  },
+  {
+    "name": "Imported Kits",
+    "slug": "imported-kits",
+    "path": "/Products/imported-kits/"
+  },
+  {
+    "name": "Jackets",
+    "slug": "jackets",
+    "path": "/Products/jackets/"
+  },
+  {
+    "name": "Kids",
+    "slug": "kids",
+    "path": "/Products/kids/"
+  },
+  {
+    "name": "Offer Jersey",
+    "slug": "offer-jersey",
+    "path": "/Products/offer-jersey/"
+  },
+  {
+    "name": "Photo Frames",
+    "slug": "photo-frames",
+    "path": "/Products/photo-frames/"
+  },
+  {
+    "name": "Player Version",
+    "slug": "player-version",
+    "path": "/Products/player-version/"
+  },
+  {
+    "name": "Premium Quality",
+    "slug": "premium-quality",
+    "path": "/Products/premium-quality/"
+  },
+  {
+    "name": "Retro Jersey",
+    "slug": "retro-jersey",
+    "path": "/Products/retro-jersey/"
+  },
+  {
+    "name": "Shorts",
+    "slug": "shorts",
+    "path": "/Products/shorts/"
+  },
+  {
+    "name": "Stockings",
+    "slug": "stockings",
+    "path": "/Products/stockings/"
+  },
+  {
+    "name": "Sublimation Jersey",
+    "slug": "sublimation-jersey",
+    "path": "/Products/sublimation-jersey/"
+  },
+  {
+    "name": "T-Shirts",
+    "slug": "t-shirts",
+    "path": "/Products/t-shirts/"
+  },
+  {
+    "name": "World Cup",
+    "slug": "world-cup",
+    "path": "/Products/world-cup/"
+  }
+]

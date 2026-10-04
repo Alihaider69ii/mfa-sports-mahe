@@ -1,0 +1,69 @@
+:root {
+  /* Brand Core Colors - Deep Pitch Green & Electric Matchday Volt */
+  --mfa-color-pitch-black: #030d08;
+  --mfa-color-pitch-dark: #071911;
+  --mfa-color-pitch-surface: #0b251a;
+  --mfa-color-pitch-card: #0e3022;
+  --mfa-color-pitch-border: #184734;
+  --mfa-color-pitch-border-light: #25664b;
+
+  --mfa-color-volt: #d6ff00;
+  --mfa-color-volt-hover: #c2ea00;
+  --mfa-color-volt-muted: rgba(214, 255, 0, 0.15);
+
+  --mfa-color-gold: #ffbe1a;
+  --mfa-color-red: #ef4444;
+  --mfa-color-white: #ffffff;
+  --mfa-color-offwhite: #f1f5f9;
+
+  --mfa-color-text-primary: #ffffff;
+  --mfa-color-text-secondary: #cbd5e1;
+  --mfa-color-text-muted: #80968b;
+  --mfa-color-text-inverted: #030d08;
+
+  /* Typography */
+  --mfa-font-display: 'Barlow Condensed', 'Oswald', -apple-system, BlinkMacSystemFont, sans-serif;
+  --mfa-font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --mfa-font-mono: 'JetBrains Mono', monospace;
+
+  /* Typography Sizing */
+  --mfa-text-xs: 0.75rem;     /* 12px */
+  --mfa-text-sm: 0.875rem;    /* 14px */
+  --mfa-text-base: 1rem;      /* 16px */
+  --mfa-text-lg: 1.125rem;    /* 18px */
+  --mfa-text-xl: 1.25rem;     /* 20px */
+  --mfa-text-2xl: 1.5rem;     /* 24px */
+  --mfa-text-3xl: 1.875rem;   /* 30px */
+  --mfa-text-4xl: 2.25rem;    /* 36px */
+  --mfa-text-5xl: 3rem;       /* 48px */
+  --mfa-text-6xl: 3.75rem;    /* 60px */
+  --mfa-text-7xl: 4.5rem;     /* 72px */
+
+  /* Spacing Scale (8pt grid) */
+  --mfa-space-1: 0.25rem;  /* 4px */
+  --mfa-space-2: 0.5rem;   /* 8px */
+  --mfa-space-3: 0.75rem;  /* 12px */
+  --mfa-space-4: 1rem;     /* 16px */
+  --mfa-space-5: 1.25rem;  /* 20px */
+  --mfa-space-6: 1.5rem;   /* 24px */
+  --mfa-space-8: 2rem;     /* 32px */
+  --mfa-space-10: 2.5rem;  /* 40px */
+  --mfa-space-12: 3rem;    /* 48px */
+  --mfa-space-16: 4rem;    /* 64px */
+
+  /* Border Radii (Crisp, athletic angles with subtle curvature) */
+  --mfa-radius-none: 0px;
+  --mfa-radius-sm: 2px;
+  --mfa-radius-md: 4px;
+  --mfa-radius-lg: 8px;
+  --mfa-radius-full: 9999px;
+
+  /* Shadows */
+  --mfa-shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.45);
+  --mfa-shadow-glow-volt: 0 0 25px -4px rgba(214, 255, 0, 0.35);
+  --mfa-shadow-glow-gold: 0 0 25px -4px rgba(255, 190, 26, 0.35);
+
+  /* Transitions */
+  --mfa-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --mfa-transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

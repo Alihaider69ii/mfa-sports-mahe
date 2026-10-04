@@ -1,0 +1,74 @@
+@import '../tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: var(--mfa-color-pitch-black);
+  --foreground: var(--mfa-color-text-primary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--mfa-color-text-primary);
+  background-color: var(--mfa-color-pitch-black);
+  font-family: var(--font-body), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom kit scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030d08;
+}
+::-webkit-scrollbar-thumb {
+  background: #184734;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d6ff00;
+}
+
+/* Athletic Jersey Angle Styling */
+.jersey-slant {
+  clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
+}
+
+.jersey-badge-slant {
+  transform: skewX(-8deg);
+}
+
+.jersey-badge-unskew {
+  transform: skewX(8deg);
+}
+
+/* Kit Number Styling */
+.kit-num {
+  font-family: var(--font-display), 'Barlow Condensed', 'Oswald', sans-serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+/* Sublimation diagonal kit lines overlay */
+.sublimation-grid {
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(214, 255, 0, 0.03) 0px,
+    rgba(214, 255, 0, 0.03) 1px,
+    transparent 1px,
+    transparent 16px
+  );
+}
