@@ -3,6 +3,8 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AIWidgetMount } from "@/components/AIWidgetMount";
+import { LoginModal } from "@/components/LoginModal";
+import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { getCategories } from "@/lib/data";
 
 export const viewport: Viewport = {
@@ -55,10 +57,12 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className="bg-pitch-black text-slate-100 font-body min-h-screen flex flex-col antialiased selection:bg-volt selection:text-pitch-black">
+      <body className="bg-pitch-black text-slate-100 font-body min-h-screen flex flex-col antialiased selection:bg-volt selection:text-pitch-black pb-14 sm:pb-0">
         <Header categories={categories} />
         <main className="flex-1">{children}</main>
         <Footer categories={categories} />
+        <LoginModal />
+        <MobileBottomNav />
         <AIWidgetMount />
       </body>
     </html>

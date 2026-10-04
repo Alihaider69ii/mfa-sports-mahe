@@ -121,6 +121,16 @@ export function Footer({ categories }: FooterProps) {
             </h4>
             <ul className="space-y-1.5">
               <li>
+                <Link href="/blogs" className="hover:text-volt transition-colors block py-0.5 text-slate-300 font-medium">
+                  Matchday Stories & Blogs
+                </Link>
+              </li>
+              <li>
+                <Link href="/login" className="hover:text-volt transition-colors block py-0.5 text-slate-300">
+                  User Account Login (+91)
+                </Link>
+              </li>
+              <li>
                 <Link href="/return-policy" className="hover:text-volt transition-colors block py-0.5">
                   Return Policy (7 Days)
                 </Link>

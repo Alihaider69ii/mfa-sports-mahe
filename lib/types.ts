@@ -57,3 +57,16 @@ export interface EnquirySubmission {
   message: string;
   submittedAt: string;
 }
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  date: string;
+  author: string;
+  readTime: string;
+  coverImage: string;
+  excerpt: string;
+  content: string[];
+  tags: string[];
+}
+

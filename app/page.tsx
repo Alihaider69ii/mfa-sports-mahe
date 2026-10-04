@@ -1,10 +1,12 @@
 import React from 'react';
-import { Hero } from '@/components/Hero';
+import { HeroCarousel } from '@/components/HeroCarousel';
+import { VisualCategoryStories } from '@/components/VisualCategoryStories';
 import { CategoryPills } from '@/components/CategoryPills';
 import { DealOfTheDay } from '@/components/DealOfTheDay';
 import { NewArrivals } from '@/components/NewArrivals';
 import { ClubCollections } from '@/components/ClubCollections';
 import { CustomJerseySection } from '@/components/CustomJerseySection';
+import { BlogHighlights } from '@/components/BlogHighlights';
 import { TrustStrip } from '@/components/TrustStrip';
 import { getCategories, getDeals, getNewArrivals, getClubs } from '@/lib/data';
 
@@ -20,25 +22,31 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* 1. Hero with the strongest current offer from the ingested data */}
-      <Hero topDeal={topDeal} />
+      {/* 1. Interactive Hero Banner Carousel with Real MFA Posters & Touch Swipe */}
+      <HeroCarousel topDeal={topDeal} />
 
-      {/* 2. Category Strip (Horizontal pill scroll for all 16 collections) */}
+      {/* 2. Visual Category Story Circles with Real Kit Photography */}
+      <VisualCategoryStories />
+
+      {/* 3. Category Strip (Horizontal pill scroll for all 16 collections) */}
       <CategoryPills categories={categories} />
 
-      {/* 3. Deal of the Day (Flat 199 - 299 jerseys) */}
+      {/* 4. Deal of the Day (Flat 199 - 299 jerseys) */}
       <DealOfTheDay deals={deals} />
 
-      {/* 4. New Arrivals */}
+      {/* 5. New Arrivals */}
       <NewArrivals products={newArrivals} />
 
-      {/* 5. Club Collections (Arsenal, AC Milan, Argentina, etc.) */}
+      {/* 6. Club Collections (Arsenal, AC Milan, Argentina, etc.) */}
       <ClubCollections clubs={clubs} />
 
-      {/* 6. Custom Jersey CTA & Bulk Enquiry Form */}
+      {/* 7. Custom Jersey CTA & Bulk Enquiry Form */}
       <CustomJerseySection />
 
-      {/* 7. Trust Strip */}
+      {/* 8. Matchday Stories & Blogs */}
+      <BlogHighlights />
+
+      {/* 9. Trust Strip */}
       <TrustStrip />
     </div>
   );

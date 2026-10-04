@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { Product, Category, Club, Policies } from './types';
+import { Product, Category, Club, Policies, BlogPost } from './types';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 
@@ -165,3 +165,21 @@ export function getRelatedProducts(product: Product, limit = 4): Product[] {
     .filter((p) => p.slug !== product.slug && (p.categorySlug === product.categorySlug || (product.club && p.club === product.club)))
     .slice(0, limit);
 }
+
+export function getBlogs(): BlogPost[] {
+  const filePath = path.join(DATA_DIR, 'blogs.json');
+  if (!fs.existsSync(filePath)) return [];
+  try {
+    const raw = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(raw);
+  } catch (err) {
+    console.error('Error reading blogs.json:', err);
+    return [];
+  }
+}
+
+export function getBlogBySlug(slug: string): BlogPost | null {
+  const blogs = getBlogs();
+  return blogs.find((b) => b.slug === slug) || null;
+}
+

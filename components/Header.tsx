@@ -3,9 +3,10 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, Search, Menu, X, ArrowUpRight, Flame } from 'lucide-react';
+import { Phone, Search, Menu, X, ArrowUpRight, Flame, User, BookOpen } from 'lucide-react';
 import { SITE_CONFIG } from '@/config';
 import { SearchModal } from './SearchModal';
+import { openLoginModal } from './LoginModal';
 
 interface HeaderProps {
   categories?: { name: string; slug: string }[];
@@ -92,6 +93,9 @@ export function Header({ categories = [] }: HeaderProps) {
             <Link href="/c/retro-jersey" className="text-slate-300 hover:text-volt transition-colors">
               Retro Kits
             </Link>
+            <Link href="/blogs" className="text-slate-300 hover:text-volt transition-colors">
+              Blogs
+            </Link>
             <Link href="/#custom-jerseys" className="text-volt hover:text-volt-hover transition-colors">
               Custom Kits
             </Link>
@@ -112,6 +116,16 @@ export function Header({ categories = [] }: HeaderProps) {
               <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] bg-pitch-dark text-slate-400 rounded border border-pitch-border font-mono">
                 /
               </kbd>
+            </button>
+
+            {/* Account / Login Trigger */}
+            <button
+              onClick={openLoginModal}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded bg-pitch-surface border border-pitch-border hover:border-volt text-slate-200 hover:text-white transition-all text-xs sm:text-sm font-display uppercase tracking-wider font-bold"
+              aria-label="Account Login"
+            >
+              <User className="w-4 h-4 text-volt" />
+              <span className="hidden md:inline">Login</span>
             </button>
 
             <a
@@ -135,6 +149,22 @@ export function Header({ categories = [] }: HeaderProps) {
         {mobileMenuOpen && (
           <div className="lg:hidden bg-pitch-dark border-b border-pitch-border px-4 py-4 space-y-4 animate-in slide-in-from-top duration-200">
             <div className="grid grid-cols-2 gap-2 text-xs font-display uppercase tracking-wider font-bold">
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  openLoginModal();
+                }}
+                className="p-2.5 rounded bg-volt text-pitch-black flex items-center justify-center gap-1.5 font-black text-left"
+              >
+                <User className="w-4 h-4" /> Account Login
+              </button>
+              <Link
+                href="/blogs"
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2.5 rounded bg-pitch-surface border border-pitch-border text-slate-200 flex items-center justify-center gap-1.5"
+              >
+                <BookOpen className="w-4 h-4 text-volt" /> Matchday Blogs
+              </Link>
               <Link
                 href="/#deals"
                 onClick={() => setMobileMenuOpen(false)}
