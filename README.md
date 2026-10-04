@@ -36,7 +36,7 @@ A fast, bold, mobile-first redesign of the **MFA Sports Mahe** website ([mfaspor
    - Every **"Buy on MFA Sports"** button deep-links directly to the product URL on the official live store (`https://www.mfasportsmahe.com/Products/<slug>`).
 
 4. **Social & Contact Data Integrity**:
-   - **Phone**: `9074694968` (10 AM to 7 PM, Sunday holiday)
+   - **Phone**: `9xxxxxx` (10 AM to 7 PM, Sunday holiday)
    - **Free Delivery**: All Over India Above ₹399
    - **Instagram**: [instagram.com/mfa_jersey_store](https://www.instagram.com/mfa_jersey_store) (131K+ Followers)
    - **Location**: Opp Sports Ground, Mahe, Kerala 673310
