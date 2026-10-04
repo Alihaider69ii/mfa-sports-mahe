@@ -32,7 +32,9 @@ export interface Category {
 export interface Club {
   name: string;
   slug: string;
-  href: string;
+  href?: string;
+  logo?: string;
+  badge?: string;
   productCount: number;
 }
 
